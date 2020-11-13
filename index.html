@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="typingicon.jpeg">
+    <title>Beat Your Speed</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Goldman&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div class="left">
+        <div class="timeleft">
+            <p class="counter">Time Left</p>
+            <p id="secs">5</p>
+        </div>
+    </div>
+    <div class="center">
+        <div class="title">
+            <h3>Beat Your Speed</h3>
+        </div>
+        <h2 id="Mainword"></h2>
+        <div class="inputtext">
+            <input id="inputbox" type="text" placeholder="Shoot your spell here" spellcheck="false">
+        </div>
+        <!-- <div id="message"> -->
+            <h4 id="message"></h4>
+        <!-- </div> -->
+        <div class="instruct">
+            <p>Note : You need to complete typing each word in maximum <span style="color:orange;" id="seconds">5</span> seconds in order to move to the next word.</br> At the point you fail, the game will be over and your points will reset to 0.</br>To play again, just type the current word. Your score will reset</p>
+        </div>
+        <div class="made">
+            <p>Made with &#128155 by Khushali</p>
+        </div>
+    </div>
+    <div class="stats">
+        <div class="currentscore">
+            <p id="Scorehead">Current Score</p>
+            <p id="Score">0</p>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
