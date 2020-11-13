@@ -64,8 +64,8 @@ body{
 #message{
     color: red;
     text-align: center;
-    padding-top: 30px;
-    font-size: 20px;
+    padding-top: 10px;
+    font-size: 30px;
     font-family: 'Goldman', cursive;
     height: 40px;   
 }
