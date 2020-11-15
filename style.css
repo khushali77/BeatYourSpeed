@@ -1,0 +1,140 @@
+body{
+    display: grid;
+    font-family: 'Goldman', cursive;
+    color: whitesmoke;
+    animation-name: animate;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes animate{
+    0%{background-color: rgb(124, 92, 4);}
+    20% {background-color: rgb(3, 10, 29);}
+    40% {background-color: rgb(16, 88, 94);}
+    60% {background-color: rgb(78, 3, 3);}
+    80% {background-color: rgb(56, 45, 45);}
+    100% {background-color:rgb(105, 3, 66);}
+}
+
+.top{
+    /* background-color: black; */
+    margin-top: -30px;
+    font-size: 40px;
+    text-align: center;
+    font-style: italic;
+}
+
+.maingame{
+    display:flex;
+    flex-direction: row;
+    width:100%;
+}
+
+.leftside{
+    /* background-color: burlywood; */
+    width:20%;
+    text-align: center;
+}
+
+#timeleftheading{
+    font-size: 32px;
+}
+
+#seconds{
+    margin-top: -10px;
+    font-size: 120px;
+}
+
+.centerside{
+    /* background-color: coral; */
+    width: 60%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 100px;
+}
+
+#mainWord{
+    margin-bottom: 0px;
+    margin-top: 50px;
+}
+
+#inputbox{
+    border-radius: 30px;
+    padding: 15px;
+    box-shadow: 0 0 10px 2px lightslategray;
+    width: 50%;
+    text-align: center;
+    font-size: 20px;
+}
+
+#message{
+    font-size: 30px;
+    font-family: 'Goldman', cursive;
+    color: red;
+    height: 40px;
+    padding-bottom: -500px;
+}
+
+.rightside{
+    /* background-color: darkcyan; */
+    width:20%;
+    text-align: center;
+}
+
+#scoreheading{
+    font-size:32px;
+}
+
+#score{
+    margin-top: -10px;
+    font-size: 120px;
+}
+
+.bottom{
+    /* background-color: goldenrod; */
+    font-size: 20px;
+    text-align: center;
+    width:45%;
+    justify-self: center;
+}
+
+@media (max-width:1240px)
+{
+    .maingame{
+        flex-direction: column;
+    }
+    .top{
+        margin-top: -50px;
+    }
+    .leftside{
+        width:100%;
+        order: 1;
+    }
+    #seconds{
+        margin-top: -20px;
+        font-size: 32px;
+    }
+    .centerside{
+        width:100%;
+    }
+    #mainWord{
+        margin-bottom: -20px;
+        margin-top: 20px;
+        font-size: 80px;
+    }
+    #inputbox{
+        border-color: royalblue;
+    }
+    .rightside{
+        width: 100%;
+        order:2;
+    }
+    #score{
+        margin-top: -20px;
+        font-size: 32px;
+    }
+    .bottom{
+        width:90%;
+    }
+}

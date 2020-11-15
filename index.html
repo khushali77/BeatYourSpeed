@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beat your speed</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Goldman&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div class="top">
+        <h2>Beat Your Speed</h2>
+    </div>
+    <div class="maingame">
+    <div class="leftside">
+        <div id="timer">
+            <p id="timeleftheading">Time Left</p>
+            <h3 id="seconds">5</h3>
+        </div>
+    </div>
+
+    <div class="centerside">
+        <h3 id="mainWord">Hello</h3>
+        <input id="inputbox" type="text" placeholder="Shoot your spell here">
+        <p id="message">Game Over!</p>
+    </div>
+
+    <div class="rightside">
+        <div id="scoreDisplay">
+            <p id="scoreheading">Current Score</p>
+            <h3 id="score">0</h3>
+        </div>
+    </div> 
+    </div> 
+    <div class="bottom">
+        <p>Note : You need to complete typing each word in maximum <span style="color: orange;font-size:20px" id="fixsec;">3</span> seconds in order to move to the next word. At the point you fail, the game will be over and your points will reset to 0.To play again, just type the current word. Your score will reset to 0.</p>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
